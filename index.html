@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CleanConnect - Beta Program for Cleaners</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Use the Inter font family defined above */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Style for the embedded Google Form to make it responsive */
+        .responsive-iframe-container {
+            position: relative;
+            overflow: hidden;
+            padding-top: 120%; /* Adjust this percentage to fit the form's height */
+        }
+        .responsive-iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-6 py-4">
+            <h1 class="text-2xl font-bold text-teal-600">CleanConnect</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12 md:py-20">
+
+        <!-- Hero Section -->
+        <section class="text-center">
+            <h2 class="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
+                Connect with More Commercial Cleaning Jobs.
+            </h2>
+            <p class="mt-4 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+                Join the exclusive beta test for CleanConnect, the new platform designed to help professional cleaners like you find quality commercial clients, manage your schedule, and grow your business.
+            </p>
+            <a href="#signup-form" class="mt-8 inline-block bg-teal-600 text-white font-bold rounded-lg px-8 py-3 text-lg hover:bg-teal-700 transition duration-300">
+                Apply to Join Beta
+            </a>
+        </section>
+
+        <!-- Features Section -->
+        <section class="mt-16 md:mt-24">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+                <!-- Feature 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-4xl mb-4">✨</div>
+                    <h3 class="text-xl font-semibold text-gray-900">Find Quality Leads</h3>
+                    <p class="mt-2 text-gray-600">
+                        Get matched with verified commercial job opportunities in your area, from offices to retail spaces.
+                    </p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-4xl mb-4">🗓️</div>
+                    <h3 class="text-xl font-semibold text-gray-900">Manage Your Schedule</h3>
+                    <p class="mt-2 text-gray-600">
+                        Our simple tools help you organize your bookings and manage your availability with ease.
+                    </p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-4xl mb-4">📈</div>
+                    <h3 class="text-xl font-semibold text-gray-900">Grow Your Business</h3>
+                    <p class="mt-2 text-gray-600">
+                        Focus on what you do best—cleaning. We'll help you build your reputation and your client list.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sign-up Form Section -->
+        <section id="signup-form" class="mt-16 md:mt-24 bg-white p-8 md:p-12 rounded-lg shadow-lg max-w-4xl mx-auto">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-gray-900">Become a Beta Tester</h2>
+                <p class="mt-3 text-lg text-gray-600">
+                    Fill out the form below to apply. As a beta tester, you'll get early access and help shape the future of CleanConnect.
+                </p>
+            </div>
+            
+            <!-- Embedded Google Form -->
+            <div class="mt-8 responsive-iframe-container">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfM3Dpf5KxIgTWDfjrdnqLNdYRkAo_vlsMkvYJJ8djmvtpa5A/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white mt-16 md:mt-24">
+        <div class="container mx-auto px-6 py-4 text-center">
+            <p>&copy; 2025 CleanConnect. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Simple script for smooth scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
+
